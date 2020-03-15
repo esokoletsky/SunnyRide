@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta
+      name="viewport"
+      content="initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <!-- Geocoding script -->
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.2.0/mapbox-gl-geocoder.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.2.0/mapbox-gl-geocoder.css"
+      type="text/css"
+    />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js"></script>
+    <!-- Direction Script -->
+    <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js"></script>
+    <link
+      href="https://api.tiles.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1>Sunny Rides</h1>
+    <h2>(Should I ride to Fulllstack?)</h2>
+    <div id="map"></div>
+    <div class="text-box">
+      <p>Ever wonder what's the best route to fullstack on bike?</p>
+      <p>
+        You check google maps, but on your way home your stuck in a thunder
+        storm
+      </p>
+      <p>Now with Sunny Rides, you can see the weather at the same time</p>
+    </div>
+    <!-- Weather API -->
+    <div class="container">
+      <div class="app-title">
+        <p>How's the weather?</p>
+      </div>
+      <div class="notification"></div>
+      <div class="weather-container">
+        <div class="weather-icon">
+          <img src="icons/unknown.png" alt="unknown" />
+        </div>
+        <div class="temperature-value">
+          <p>-°<span>C</span></p>
+        </div>
+        <div class="temperature-description">
+          <p>-</p>
+        </div>
+        <div class="location">
+          <p>-</p>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="mapbox.js"></script>
+    <script type="text/javascript" src="weather.js"></script>
+  </body>
+</html>
