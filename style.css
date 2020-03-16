@@ -14,7 +14,8 @@ h2 {
   position: relative;
   left: 65%;
   margin-top: 8%;
-  font-size: 20px;-
+  font-size: 20px;
+  max-width: 30%;
 }
 #map {
   position: absolute;

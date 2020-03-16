@@ -177,7 +177,7 @@ map.on("click", function(e) {
   getRoute(coords);
 });
 
-// Geocoding
+// GEOCODING ----------------------------------------------
 
 var geocoder = new MapboxGeocoder({
   // Initialize the geocoder
